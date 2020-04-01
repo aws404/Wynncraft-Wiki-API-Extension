@@ -1,0 +1,236 @@
+<!-- Created for CasualDude, and for his wonderful work on this template. -->
+<!-- Huge modification by colin350 -->
+<includeonly>{| class="wikitable" style="text-align: center;" cellspacing="0" 
+! Identification !! Minimum Value !! Maximum Value 
+|-
+<!-- HEALTH BONUS -->
+{{#if:{{{min_HEALTHBONUS|}}}|{{!}} &nbsp;Health Bonus&nbsp;|{{#if:{{{max_HEALTHBONUS|}}}|{{!}} &nbsp;Health Bonus&nbsp;|}}}}
+{{#if:{{{min_HEALTHBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_HEALTHBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_HEALTHBONUS}}} &nbsp;|}} 
+{{#if:{{{max_HEALTHBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_HEALTHBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_HEALTHBONUS}}} &nbsp;|}}
+|-
+<!-- RAW HEALTH REGEN --> 
+{{#if:{{{min_HEALTHREGENRAWN|}}}|{{!}} &nbsp;Raw Health Regen&nbsp;|{{#if:{{{max_HEALTHREGENRAWN|}}}|{{!}} &nbsp;Raw Health Regen&nbsp;|}}}}
+{{#if:{{{min_HEALTHREGENRAWN|}}}|{{!}} style = "color: {{#ifexpr:{{{min_HEALTHREGENRAWN}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_HEALTHREGENRAWN}}} &nbsp;|}}
+{{#if:{{{max_HEALTHREGENRAWN|}}}|{{!}} style = "color: {{#ifexpr:{{{max_HEALTHREGENRAWN}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_HEALTHREGENRAWN}}} &nbsp;|}}
+|-
+<!-- HEALTH REGEN -->
+{{#if:{{{min_HEALTHREGEN|}}}|{{!}} &nbsp;Health Regen&nbsp;|{{#if:{{{max_HEALTHREGEN|}}}|{{!}} &nbsp;Health Regen&nbsp;|}}|}}
+{{#if:{{{min_HEALTHREGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{min_HEALTHREGEN}}} > 0 | green | red }};" {{!}} {{{min_HEALTHREGEN}}} %&nbsp;|}}  
+{{#if:{{{max_HEALTHREGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{max_HEALTHREGEN}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_HEALTHREGEN}}} %&nbsp;|}} 
+|-
+<!-- MANA REGEN -->
+{{#if:{{{min_MANAREGEN|}}}|{{!}} &nbsp;Mana Regen&nbsp;|{{#if:{{{max_MANAREGEN|}}}|{{!}} &nbsp;Mana Regen&nbsp;|}}}}
+{{#if:{{{min_MANAREGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{min_MANAREGEN}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_MANAREGEN}}} / 4s&nbsp;|}}  
+{{#if:{{{max_MANAREGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{max_MANAREGEN}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_MANAREGEN}}} / 4s&nbsp;|}} 
+|-
+<!-- LIFE STEAL -->
+{{#if:{{{min_LIFESTEAL|}}}|{{!}} &nbsp;Life Steal&nbsp;|{{#if:{{{max_LIFESTEAL|}}}|{{!}} &nbsp;Life Steal&nbsp;|}}}}
+{{#if:{{{min_LIFESTEAL|}}}|{{!}} style = "color: {{#ifexpr:{{{min_LIFESTEAL}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_LIFESTEAL}}} / 4s&nbsp;|}} 
+{{#if:{{{max_LIFESTEAL|}}}|{{!}} style = "color: {{#ifexpr:{{{max_LIFESTEAL}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_LIFESTEAL}}} / 4s&nbsp;|}}
+|-
+<!-- MANA STEAL -->
+{{#if:{{{min_MANASTEAL|}}}|{{!}} &nbsp;Mana Steal&nbsp;|{{#if:{{{max_MANASTEAL|}}}|{{!}} &nbsp;Mana Steal&nbsp;|}}}}
+{{#if:{{{min_MANASTEAL|}}}|{{!}} style = "color: {{#ifexpr:{{{min_MANASTEAL}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_MANASTEAL}}} / 4s&nbsp;|}}
+{{#if:{{{max_MANASTEAL|}}}|{{!}} style = "color: {{#ifexpr:{{{max_MANASTEAL}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_MANASTEAL}}} / 4s&nbsp;|}}
+|-
+<!-- EMERALDSTEALING -->
+{{#if:{{{min_EMERALDSTEALING|}}}|{{!}} &nbsp;Stealing&nbsp;|{{#if:{{{max_EMERALDSTEALING|}}}|{{!}} &nbsp;EMERALDSTEALING&nbsp;|}}}}
+{{#if:{{{min_EMERALDSTEALING|}}}|{{!}} style = "color: {{#ifexpr:{{{min_EMERALDSTEALING}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_EMERALDSTEALING}}} %&nbsp;|}} 
+{{#if:{{{max_EMERALDSTEALING|}}}|{{!}} style = "color: {{#ifexpr:{{{max_EMERALDSTEALING}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_EMERALDSTEALING}}} %&nbsp;|}}
+|-
+<!-- XP BONUS --> 
+{{#if:{{{min_XPBONUS|}}}|{{!}} &nbsp;XP Bonus&nbsp;|{{#if:{{{max_XPBONUS|}}}|{{!}} &nbsp;XP Bonus&nbsp;|}}}}
+{{#if:{{{min_XPBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_XPBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_XPBONUS}}} %&nbsp;|}}
+{{#if:{{{max_XPBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_XPBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_XPBONUS}}} %&nbsp;|}}
+|-
+<!-- LOOT BONUS -->
+{{#if:{{{min_LOOTBONUS|}}}|{{!}} &nbsp;Loot Bonus&nbsp;|{{#if:{{{max_LOOTBONUS|}}}|{{!}} &nbsp;Loot Bonus&nbsp;|}}}}
+{{#if:{{{min_LOOTBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_LOOTBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_LOOTBONUS}}} %&nbsp;|}} 
+{{#if:{{{max_LOOTBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_LOOTBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_LOOTBONUS}}} %&nbsp;|}}
+|-
+<!-- SOUL POINT REGEN -->
+{{#if:{{{min_SOULPOINTS|}}}|{{!}} &nbsp;Soul Point Regen&nbsp;|{{#if:{{{max_SOULPOINTS|}}}|{{!}} &nbsp;Soul Point Regen&nbsp;|}}}}
+{{#if:{{{min_SOULPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_SOULPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_SOULPOINTS}}} %&nbsp;|}}
+{{#if:{{{max_SOULPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_SOULPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_SOULPOINTS}}} %&nbsp;|}}
+|-
+<!-- REFLECTION --> 
+{{#if:{{{min_REFLECTION|}}}|{{!}} &nbsp;Reflection&nbsp;|{{#if:{{{max_REFLECTION|}}}|{{!}} &nbsp;REFLECTION&nbsp;|}}}}
+{{#if:{{{min_REFLECTION|}}}|{{!}} style = "color: {{#ifexpr:{{{min_REFLECTION}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_REFLECTION}}} %&nbsp;|}} 
+{{#if:{{{max_REFLECTION|}}}|{{!}} style = "color: {{#ifexpr:{{{max_REFLECTION}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_REFLECTION}}} %&nbsp;|}}
+|-
+<!-- THORNS --> 
+{{#if:{{{min_THORNS|}}}|{{!}} &nbsp;Thorns&nbsp;|{{#if:{{{max_THORNS|}}}|{{!}} &nbsp;THORNS&nbsp;|}}}}
+{{#if:{{{min_THORNS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_THORNS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_THORNS}}} %&nbsp;|}} 
+{{#if:{{{max_THORNS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_THORNS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_THORNS}}} %&nbsp;|}}
+|-
+<!-- POISON -->
+{{#if:{{{min_POISON|}}}|{{!}} &nbsp;Poison&nbsp;|{{#if:{{{max_POISON|}}}|{{!}} &nbsp;POISON&nbsp;|}}}}
+{{#if:{{{min_POISON|}}}|{{!}} style = "color: {{#ifexpr:{{{min_POISON}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_POISON}}} / 3s&nbsp;|}} 
+{{#if:{{{max_POISON|}}}|{{!}} style = "color: {{#ifexpr:{{{max_POISON}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_POISON}}} / 3s&nbsp;|}}
+|-
+<!-- EXPLODING --> 
+{{#if:{{{min_EXPLODING|}}}|{{!}} &nbsp;Exploding&nbsp;|{{#if:{{{max_EXPLODING|}}}|{{!}} &nbsp;EXPLODING&nbsp;|}}}}
+{{#if:{{{min_EXPLODING|}}}|{{!}} style = "color: {{#ifexpr:{{{min_EXPLODING}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_EXPLODING}}} %&nbsp;|}} 
+{{#if:{{{max_EXPLODING|}}}|{{!}} style = "color: {{#ifexpr:{{{max_EXPLODING}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_EXPLODING}}} %&nbsp;|}}
+|-
+<!-- WALK SPEED --> 
+{{#if:{{{min_SPEED|}}}|{{!}} &nbsp;Walk Speed&nbsp;|{{#if:{{{max_SPEED|}}}|{{!}} &nbsp;Walk Speed&nbsp;|}}}}
+{{#if:{{{min_SPEED|}}}|{{!}} style = "color: {{#ifexpr:{{{min_SPEED}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_SPEED}}} %&nbsp;|}}
+{{#if:{{{max_SPEED|}}}|{{!}} style = "color: {{#ifexpr:{{{max_SPEED}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_SPEED}}} %&nbsp;|}}
+|-
+<!-- SPRINT BONUS --> 
+{{#if:{{{min_STAMINA|}}}|{{!}} &nbsp;Sprint Bonus&nbsp;|{{#if:{{{max_STAMINA|}}}|{{!}} &nbsp;Sprint Bonus&nbsp;|}}}}
+{{#if:{{{min_STAMINA|}}}|{{!}} style = "color: {{#ifexpr:{{{min_STAMINA}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_STAMINA}}} %&nbsp;|}}
+{{#if:{{{max_STAMINA|}}}|{{!}} style = "color: {{#ifexpr:{{{max_STAMINA}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_STAMINA}}} %&nbsp;|}}
+|-
+<!-- SPRINT REGEN --> 
+{{#if:{{{min_STAMINA_REGEN|}}}|{{!}} &nbsp;Sprint Regen&nbsp;|{{#if:{{{max_STAMINA_REGEN|}}}|{{!}} &nbsp;Sprint Regen&nbsp;|}}}}
+{{#if:{{{min_STAMINA_REGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{min_STAMINA_REGEN}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_STAMINA_REGEN}}} %&nbsp;|}}
+{{#if:{{{max_STAMINA_REGEN|}}}|{{!}} style = "color: {{#ifexpr:{{{max_STAMINA_REGEN}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_STAMINA_REGEN}}} %&nbsp;|}}
+|-
+<!-- JUMP HEIGHT -->
+{{#if:{{{min_JUMP|}}}|{{!}} &nbsp;Jump Height&nbsp;|{{#if:{{{max_JUMP|}}}|{{!}} &nbsp;Jump Height&nbsp;|}}}}
+{{#if:{{{min_JUMP|}}}|{{!}} style = "color: {{#ifexpr:{{{min_JUMP}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_JUMP}}} &nbsp;|}}
+{{#if:{{{max_JUMP|}}}|{{!}} style = "color: {{#ifexpr:{{{max_JUMP}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_JUMP}}} &nbsp;|}}
+|-
+<!-- ATTACK SPEED -->
+{{#if:{{{min_ATTACKSPEED|}}}|{{!}} &nbsp;Attack Speed&nbsp;|{{#if:{{{max_ATTACKSPEED|}}}|{{!}} &nbsp;Attack Speed&nbsp;|}}}}
+{{#if:{{{min_ATTACKSPEED|}}}|{{!}} style = "color: {{#ifexpr:{{{min_ATTACKSPEED}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_ATTACKSPEED}}} Tier&nbsp;|}} 
+{{#if:{{{max_ATTACKSPEED|}}}|{{!}} style = "color: {{#ifexpr:{{{max_ATTACKSPEED}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_ATTACKSPEED}}} Tier&nbsp;|}}
+|-
+<!-- STRENGTHPOINTS -->
+{{#if:{{{min_STRENGTHPOINTS|}}}|{{!}} &nbsp;Strength&nbsp;|{{#if:{{{max_STRENGTHPOINTS|}}}|{{!}} &nbsp;STRENGTHPOINTS&nbsp;|}}}}
+{{#if:{{{min_STRENGTHPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_STRENGTHPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_STRENGTHPOINTS}}} &nbsp;|}} 
+{{#if:{{{max_STRENGTHPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_STRENGTHPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_STRENGTHPOINTS}}} &nbsp;|}}
+|-
+<!-- DEXTERITYPOINTS -->
+{{#if:{{{min_DEXTERITYPOINTS|}}}|{{!}} &nbsp;Dexterity&nbsp;|{{#if:{{{max_DEXTERITYPOINTS|}}}|{{!}} &nbsp;DEXTERITYPOINTS&nbsp;|}}}}
+{{#if:{{{min_DEXTERITYPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_DEXTERITYPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_DEXTERITYPOINTS}}} &nbsp;|}} 
+{{#if:{{{max_DEXTERITYPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_DEXTERITYPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_DEXTERITYPOINTS}}} &nbsp;|}}
+|-
+<!-- INTELLIGENCEPOINTS --> 
+{{#if:{{{min_INTELLIGENCEPOINTS|}}}|{{!}} &nbsp;Intelligence&nbsp;|{{#if:{{{max_INTELLIGENCEPOINTS|}}}|{{!}} &nbsp;INTELLIGENCEPOINTS&nbsp;|}}}}
+{{#if:{{{min_INTELLIGENCEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_INTELLIGENCEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_INTELLIGENCEPOINTS}}} &nbsp;|}}
+{{#if:{{{max_INTELLIGENCEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_INTELLIGENCEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_INTELLIGENCEPOINTS}}} &nbsp;|}}
+|-
+<!-- DEFENSEPOINTS -->
+{{#if:{{{min_DEFENSEPOINTS|}}}|{{!}} &nbsp;Defense&nbsp;|{{#if:{{{max_DEFENSEPOINTS|}}}|{{!}} &nbsp;DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_DEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_DEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_DEFENSEPOINTS}}} &nbsp;|}} 
+{{#if:{{{max_DEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_DEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_DEFENSEPOINTS}}} &nbsp;|}}
+|-
+<!-- AGILITYPOINTS --> 
+{{#if:{{{min_AGILITYPOINTS|}}}|{{!}} &nbsp;Agility&nbsp;|{{#if:{{{max_AGILITYPOINTS|}}}|{{!}} &nbsp;AGILITYPOINTS&nbsp;|}}}}
+{{#if:{{{min_AGILITYPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_AGILITYPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_AGILITYPOINTS}}} &nbsp;|}}
+{{#if:{{{max_AGILITYPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_AGILITYPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_AGILITYPOINTS}}} &nbsp;|}}
+|-
+<!-- RAW MELEE DAMAGE -->
+{{#if:{{{min_DAMAGEBONUSRAW|}}}|{{!}} &nbsp;Raw Melee Damage&nbsp;|{{#if:{{{max_DAMAGEBONUSRAW|}}}|{{!}} &nbsp;Raw Melee Damage&nbsp;|}}}}
+{{#if:{{{min_DAMAGEBONUSRAW|}}}|{{!}} style = "color: {{#ifexpr:{{{min_DAMAGEBONUSRAW}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_DAMAGEBONUSRAW}}} &nbsp;|}}
+{{#if:{{{max_DAMAGEBONUSRAW|}}}|{{!}} style = "color: {{#ifexpr:{{{max_DAMAGEBONUSRAW}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_DAMAGEBONUSRAW}}} &nbsp;|}}
+|-
+<!-- MELEE DAMAGE -->
+{{#if:{{{min_DAMAGEBONUS|}}}|{{!}} &nbsp;Melee Damage&nbsp;|{{#if:{{{max_DAMAGEBONUS|}}}|{{!}} &nbsp;Melee Damage&nbsp;|}}}}
+{{#if:{{{min_DAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_DAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_DAMAGEBONUS}}} %&nbsp;|}} 
+{{#if:{{{max_DAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_DAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_DAMAGEBONUS}}} %&nbsp;|}} 
+|-
+<!-- RAW SPELL DAMAGE -->
+{{#if:{{{min_SPELLDAMAGERAW|}}}|{{!}} &nbsp;Raw Spell Damage&nbsp;|{{#if:{{{max_SPELLDAMAGERAW|}}}|{{!}} &nbsp;Raw Spell Damage&nbsp;|}}}}
+{{#if:{{{min_SPELLDAMAGERAW|}}}|{{!}} style = "color: {{#ifexpr:{{{min_SPELLDAMAGERAW}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_SPELLDAMAGERAW}}} &nbsp;|}}
+{{#if:{{{max_SPELLDAMAGERAW|}}}|{{!}} style = "color: {{#ifexpr:{{{max_SPELLDAMAGERAW}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_SPELLDAMAGERAW}}} &nbsp;|}}
+|-
+<!-- SPELL DAMAGE -->
+{{#if:{{{min_SPELLDAMAGE|}}}|{{!}} &nbsp;Spell Damage&nbsp;|{{#if:{{{max_SPELLDAMAGE|}}}|{{!}} &nbsp;Spell Damage&nbsp;|}}}}
+{{#if:{{{min_SPELLDAMAGE|}}}|{{!}} style = "color: {{#ifexpr:{{{min_SPELLDAMAGE}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_SPELLDAMAGE}}} %&nbsp;|}} 
+{{#if:{{{max_SPELLDAMAGE|}}}|{{!}} style = "color: {{#ifexpr:{{{max_SPELLDAMAGE}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_SPELLDAMAGE}}} %&nbsp;|}}
+|-
+<!-- FIRST SPELL COST -->
+{{#if:{{{min_first_spell_cost|}}}|{{!}} &nbsp;First Spell Cost&nbsp;|{{#if:{{{max_first_spell_cost|}}}|{{!}} &nbsp;First Spell Cost&nbsp;|}}}}
+{{#if:{{{min_first_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_first_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_first_spell_cost}}} %&nbsp;|}} 
+{{#if:{{{max_first_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_first_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_first_spell_cost}}} %&nbsp;|}}
+|-
+<!-- SECOND SPELL COST -->
+{{#if:{{{min_second_spell_cost|}}}|{{!}} &nbsp;Second Spell Cost&nbsp;|{{#if:{{{max_second_spell_cost|}}}|{{!}} &nbsp;Second Spell Cost&nbsp;|}}}}
+{{#if:{{{min_second_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_second_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_second_spell_cost}}} %&nbsp;|}} 
+{{#if:{{{max_second_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_second_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_second_spell_cost}}} %&nbsp;|}}
+|-
+<!-- THIRD SPELL COST -->
+{{#if:{{{min_third_spell_cost|}}}|{{!}} &nbsp;Third Spell Cost&nbsp;|{{#if:{{{max_third_spell_cost|}}}|{{!}} &nbsp;Third Spell Cost&nbsp;|}}}}
+{{#if:{{{min_third_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_third_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_third_spell_cost}}} %&nbsp;|}} 
+{{#if:{{{max_third_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_third_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_third_spell_cost}}} %&nbsp;|}}
+|-
+<!-- FOURTH SPELL COST -->
+{{#if:{{{min_fourth_spell_cost|}}}|{{!}} &nbsp;Fourth Spell Cost&nbsp;|{{#if:{{{max_fourth_spell_cost|}}}|{{!}} &nbsp;Fourth Spell Cost&nbsp;|}}}}
+{{#if:{{{min_fourth_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_fourth_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_fourth_spell_cost}}} %&nbsp;|}} 
+{{#if:{{{max_fourth_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_fourth_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_fourth_spell_cost}}} %&nbsp;|}}
+|-
+<!-- RAW FIRST SPELL COST -->
+{{#if:{{{min_raw_first_spell_cost|}}}|{{!}} &nbsp;Raw First Spell Cost&nbsp;|{{#if:{{{max_raw_first_spell_cost|}}}|{{!}} &nbsp;Raw First Spell Cost&nbsp;|}}}}
+{{#if:{{{min_raw_first_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_raw_first_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_raw_first_spell_cost}}} &nbsp;|}}
+{{#if:{{{max_raw_first_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_raw_first_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_raw_first_spell_cost}}} &nbsp;|}}
+|-
+<!-- RAW SECOND SPELL COST -->
+{{#if:{{{min_raw_second_spell_cost|}}}|{{!}} &nbsp;Raw Second Spell Cost&nbsp;|{{#if:{{{max_raw_second_spell_cost|}}}|{{!}} &nbsp;Raw Second Spell Cost&nbsp;|}}}}
+{{#if:{{{min_raw_second_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_raw_second_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_raw_second_spell_cost}}} &nbsp;|}}
+{{#if:{{{max_raw_second_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_raw_second_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_raw_second_spell_cost}}} &nbsp;|}}
+|-
+<!-- RAW THIRD SPELL COST -->
+{{#if:{{{min_raw_third_spell_cost|}}}|{{!}} &nbsp;Raw Third Spell Cost&nbsp;|{{#if:{{{max_raw_third_spell_cost|}}}|{{!}} &nbsp;Raw Third Spell Cost&nbsp;|}}}}
+{{#if:{{{min_raw_third_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_raw_third_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_raw_third_spell_cost}}} &nbsp;|}}
+{{#if:{{{max_raw_third_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_raw_third_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_raw_third_spell_cost}}} &nbsp;|}}
+|-
+<!-- RAW FOURTH SPELL COST -->
+{{#if:{{{min_raw_fourth_spell_cost|}}}|{{!}} &nbsp;Raw Fourth Spell Cost&nbsp;|{{#if:{{{max_raw_fourth_spell_cost|}}}|{{!}} &nbsp;Raw Fourth Spell Cost&nbsp;|}}}}
+{{#if:{{{min_raw_fourth_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{min_raw_fourth_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{min_raw_fourth_spell_cost}}} &nbsp;|}}
+{{#if:{{{max_raw_fourth_spell_cost|}}}|{{!}} style = "color: {{#ifexpr:{{{max_raw_fourth_spell_cost}}} > 0 | red | green }};" {{!}} &nbsp;{{{max_raw_fourth_spell_cost}}} &nbsp;|}}
+|-
+<!-- EARTH DAMAGE -->
+{{#if:{{{min_EARTHDAMAGEBONUS|}}}|{{!}} &nbsp;{{Element|earth}} Damage&nbsp;|{{#if:{{{max_EARTHDAMAGEBONUS|}}}|{{!}} &nbsp;Earth Damage&nbsp;|}}}}
+{{#if:{{{min_EARTHDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_EARTHDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_EARTHDAMAGEBONUS}}} %&nbsp;|}}
+{{#if:{{{max_EARTHDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_EARTHDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_EARTHDAMAGEBONUS}}} %&nbsp;|}}
+|-
+<!-- THUNDER DAMAGE -->
+{{#if:{{{min_THUNDERDAMAGEBONUS|}}}|{{!}} &nbsp;{{Element|thunder}} Damage&nbsp;|{{#if:{{{max_THUNDERDAMAGEBONUS|}}}|{{!}} &nbsp;Thunder Damage&nbsp;|}}}}
+{{#if:{{{min_THUNDERDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_THUNDERDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_THUNDERDAMAGEBONUS}}} %&nbsp;|}}
+{{#if:{{{max_THUNDERDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_THUNDERDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_THUNDERDAMAGEBONUS}}} %&nbsp;|}}
+|-
+<!-- WATER DAMAGE -->
+{{#if:{{{min_WATERDAMAGEBONUS|}}}|{{!}} &nbsp;{{Element|water}} Damage&nbsp;|{{#if:{{{max_WATERDAMAGEBONUS|}}}|{{!}} &nbsp;Water Damage&nbsp;|}}}}
+{{#if:{{{min_WATERDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_WATERDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_WATERDAMAGEBONUS}}} %&nbsp;|}} 
+{{#if:{{{max_WATERDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_WATERDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_WATERDAMAGEBONUS}}} %&nbsp;|}}
+|-
+<!-- FIRE DAMAGE -->
+{{#if:{{{min_FIREDAMAGEBONUS|}}}|{{!}} &nbsp;{{Element|fire}} Damage&nbsp;|{{#if:{{{max_FIREDAMAGEBONUS|}}}|{{!}} &nbsp;Fire Damage&nbsp;|}}}}
+{{#if:{{{min_FIREDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_FIREDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_FIREDAMAGEBONUS}}} %&nbsp;|}}
+{{#if:{{{max_FIREDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_FIREDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_FIREDAMAGEBONUS}}} %&nbsp;|}}
+|-
+<!-- AIR DAMAGE -->
+{{#if:{{{min_AIRDAMAGEBONUS|}}}|{{!}} &nbsp;{{Element|air}} Damage&nbsp;|{{#if:{{{max_AIRDAMAGEBONUS|}}}|{{!}} &nbsp;Air Damage&nbsp;|}}}}
+{{#if:{{{min_AIRDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_AIRDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_AIRDAMAGEBONUS}}} %&nbsp;|}} 
+{{#if:{{{max_AIRDAMAGEBONUS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_AIRDAMAGEBONUS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_AIRDAMAGEBONUS}}} %&nbsp;|}}
+|-
+<!-- EARTH DEFENSEPOINTS -->
+{{#if:{{{min_EARTHDEFENSEPOINTS|}}}|{{!}} &nbsp;{{Element|earth}} Defense&nbsp;|{{#if:{{{max_EARTHDEFENSEPOINTS|}}}|{{!}} &nbsp;Earth DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_EARTHDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_EARTHDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_EARTHDEFENSEPOINTS}}} %&nbsp;|}} 
+{{#if:{{{max_EARTHDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_EARTHDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_EARTHDEFENSEPOINTS}}} %&nbsp;|}}
+|-
+<!-- THUNDER DEFENSEPOINTS --> 
+{{#if:{{{min_THUNDERDEFENSEPOINTS|}}}|{{!}} &nbsp;{{Element|thunder}} Defense&nbsp;|{{#if:{{{max_THUNDERDEFENSEPOINTS|}}}|{{!}} &nbsp;Thunder DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_THUNDERDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_THUNDERDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_THUNDERDEFENSEPOINTS}}} %&nbsp;|}}
+{{#if:{{{max_THUNDERDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_THUNDERDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_THUNDERDEFENSEPOINTS}}} %&nbsp;|}}
+|-
+<!-- WATER DEFENSEPOINTS -->
+{{#if:{{{min_WATERDEFENSEPOINTS|}}}|{{!}} &nbsp;{{Element|water}} Defense&nbsp;|{{#if:{{{max_WATERDEFENSEPOINTS|}}}|{{!}} &nbsp;Water DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_WATERDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_WATERDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_WATERDEFENSEPOINTS}}} %&nbsp;|}} 
+{{#if:{{{max_WATERDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_WATERDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_WATERDEFENSEPOINTS}}} %&nbsp;|}}
+|-
+<!-- FIRE DEFENSEPOINTS -->
+{{#if:{{{min_FIREDEFENSEPOINTS|}}}|{{!}} &nbsp;{{Element|fire}} Defense&nbsp;|{{#if:{{{max_FIREDEFENSEPOINTS|}}}|{{!}} &nbsp;Fire DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_FIREDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_FIREDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_FIREDEFENSEPOINTS}}} %&nbsp;|}} 
+{{#if:{{{max_FIREDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_FIREDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_FIREDEFENSEPOINTS}}} %&nbsp;|}}
+|-
+<!-- AIR DEFENSEPOINTS -->
+{{#if:{{{min_AIRDEFENSEPOINTS|}}}|{{!}} &nbsp;{{Element|air}} Defense&nbsp;|{{#if:{{{max_AIRDEFENSEPOINTS|}}}|{{!}} &nbsp;Air DEFENSEPOINTS&nbsp;|}}}}
+{{#if:{{{min_AIRDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{min_AIRDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{min_AIRDEFENSEPOINTS}}} %&nbsp;|}} 
+{{#if:{{{max_AIRDEFENSEPOINTS|}}}|{{!}} style = "color: {{#ifexpr:{{{max_AIRDEFENSEPOINTS}}} > 0 | green | red }};" {{!}} &nbsp;{{{max_AIRDEFENSEPOINTS}}} %&nbsp;|}}
+|}</includeonly><noinclude>
+{{Identification/doc}}</noinclude>

@@ -1,0 +1,62 @@
+<includeonly>{{Infobox
+|above={{{name|{{PAGENAME}}}}}
+|image={{AccessoryIcon|{{{material}}}}}
+|label1=Accessory Slot
+|data1={{{accessoryType}}}{{#if: {{NAMESPACE}} || [[Category:{{{accessoryType}}}s]] }}
+|label2=Min. Level
+|data2={{{level}}}
+|label3=Type
+|data3={{#switch: {{{tier|}}}
+ | Unique = <span style="color:#DF7401">Unique</span>
+ | Rare = <span style="color:#FF55FF">Rare</span>
+ | Legendary = <span style="color:#55FFFF">Legendary</span>
+ | Fabled = <span style="color:#FF5555">Fabled</span>
+ | Set = <span style="color:#44cc44">Set</span>
+ | {{{tier}}}
+}}
+|label4=Base Health Bonus
+|data4= {{#if: {{{health|}}}
+| {{{health}}} <span style="color:#AA0000">♥</span>}}
+|label5=Obtain
+|data5= {{#switch: {{{dropType|}}}
+ | never = <span style="color:#FF55FF">Merchant</span>
+ | lootchest = <span style="color:#DF7401">Loot Chest</span>
+ | dungeon = <span style="color:#DF7401">Dungeon Drop</span>
+ | NORMAL = <span style="color:#000000">Mob Drop</span>
+ | {{{dropType}}}
+}}
+|label6=Tag
+|data6={{ #ifeq: {{{restrictions|}}} | Quest Item | [[Category:Quest Items]] }}{{#switch: {{{restrictions|}}}
+ | Quest Item = <span style="color:#FF5555">Quest Item</span>
+ | Untradable = <span style="color:#FF5555">Untradable</span>
+ | untradable = <span style="color:#FF5555">Untradable</span>
+ | {{{restrictions|}}}
+}}
+| header7 = {{#if:{{{{earthDefense|}}}{{{thunderDefense|}}}{{{waterDefense|}}}{{{fireDefense|}}}{{{airDefense|}}}|Base Defenses}}
+| label8 = {{Element|earth}}
+| data8 = {{{earthDefense|}}}
+| label9 = {{Element|thunder}}
+| data9 = {{{thunderDefense|}}}
+| label10 = {{Element|water}}
+| data10 = {{{waterDefense|}}}
+| label11 = {{Element|fire}}
+| data11 = {{{fireDefense|}}}
+| label12 = {{Element|air}}
+| data12 = {{{airDefense|}}}
+| header13 = {{#if:{{{strength|}}}{{{dexterity|}}}{{{intelligence|}}}{{{defense|}}}{{{agility|}}}{{{quest|}}}|Requirements}}
+| label13 = Strength Minimum:
+| data13 = {{{strength|}}}
+| label14 = Dexterity Minimum:
+| data14 = {{{dexterity|}}}
+| label15 = Intelligence Minimum:
+| data15 = {{{intelligence|}}}
+| label16 = Defense Minimum:
+| data16 = {{{defense|}}}
+| label17 = Agility Minimum:
+| data17 = {{{agility|}}}
+| label18 = Quest
+| data18 = {{#if:{{{quest|}}}|[[{{#if:{{{questLink|}}}|{{{questLink}}}|{{{quest}}}}}|{{{quest}}}]]}}
+| header19 = {{#if:{{{otherinfo|}}}|Other Information|}}
+| data19={{#if:{{{otherinfo|}}}|<span style="float:left">{{{otherinfo}}}</span>|}}
+}}
+</includeonly><noinclude>

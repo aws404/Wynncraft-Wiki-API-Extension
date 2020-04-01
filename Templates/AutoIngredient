@@ -1,0 +1,50 @@
+<includeonly>{{#if:{{#pos:{{lc:{{{professions|}}}}}|armouring}}|{{#vardefine:armouring|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|tailoring}}|{{#vardefine:tailoring|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|weaponsmithing}}|{{#vardefine:weaponsmithing|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|woodworking}}|{{#vardefine:woodworking|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|jeweling}}|{{#vardefine:jeweling|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|scribing}}|{{#vardefine:scribing|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|cooking}}|{{#vardefine:cooking|1}}}}<!--
+-->{{#if:{{#pos:{{lc:{{{professions|}}}}}|alchemism}}|{{#vardefine:alchemism|1}}}}<!--
+
+-->{{Infobox
+|above={{{name|{{PAGENAME}}}}}
+|image={{{image}}}
+|header1=Statistics
+|label1=Tier
+|data1={{#switch: {{{tier|}}}
+ | 0 = <span style="color:#555555; font-weight:bold; font-size:180%">✫✫✫</span>
+ | 1 = <span style="color:#FFFF55; font-weight:bold; font-size:180%">✫</span><span style="color:#555555; font-weight:bold; font-size:180%">✫✫</span>
+ | 2 = <span style="color:#E5E; font-weight:bold; font-size:180%">✫✫</span><span style="color:#555555; font-weight:bold; font-size:180%">✫</span>
+ | 3 = <span style="color:#5FF; font-weight:bold; font-size:180%">✫✫✫</span>
+ | {{{tier}}}}}
+|label2=Crafting Lv. Min.
+|data2=<big>{{{level}}}</big>
+|label3=Can be used in:
+|data3={{#if: {{#var:armouring}}|{{ProfessionLink|armouring}}}}
+|label4= 
+|data4={{#if: {{#var:tailoring}}|{{ProfessionLink|tailoring}}}}
+|label5= 
+|data5={{#if: {{#var:weaponsmithing}}|{{ProfessionLink|weaponsmithing}}}}
+|label6= 
+|data6={{#if: {{#var:woodworking}}|{{ProfessionLink|woodworking}}}}
+|label7= 
+|data7={{#if: {{#var:jeweling}}|{{ProfessionLink|jeweling}}}}
+|label8= 
+|data8={{#if: {{#var:scribing}}|{{ProfessionLink|scribing}}}}
+|label9= 
+|data9={{#if: {{#var:cooking}}|{{ProfessionLink|cooking}}}}
+|label10= 
+|data10={{#if: {{#var:alchemism}}|{{ProfessionLink|alchemism}}}}
+}}<!--
+-->[[Category:Items]] [[Category:Crafting Ingredients]]
+{{#if: {{{tier|}}} | [[Category:Tier {{{tier|}}} Ingredients]] }}<!--
+-->{{#if: {{#var:armouring}} | [[Category:Armouring Ingredients]] }}<!--
+-->{{#if: {{#var:tailoring}} | [[Category:Tailoring Ingredients]] }}<!--
+-->{{#if: {{#var:weaponsmithing}} | [[Category:Weaponsmithing Ingredients]] }}<!--
+-->{{#if: {{#var:woodworking}} | [[Category:Woodworking Ingredients]] }}<!--
+-->{{#if: {{#var:jeweling}} | [[Category:Jeweling Ingredients]] }}<!--
+-->{{#if: {{#var:scribing}} | [[Category:Scribing Ingredients]] }}<!--
+-->{{#if: {{#var:cooking}} | [[Category:Cooking Ingredients]] }}<!--
+-->{{#if: {{#var:alchemism}} | [[Category:Alchemism Ingredients]] }}</includeonly>
+<noinclude>
