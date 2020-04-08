@@ -182,6 +182,6 @@ class ExtensionHooks {
    
       $string .= "}}";
   
-      return $string;
+      return [ $string, 'noparse' => false ];;
    }
 }
