@@ -2,6 +2,7 @@
 class ExtensionHooks {
    // Register any render callbacks with the parser
    public static function onParserFirstCallInit( Parser $parser ) {
+      $parser->setHook( 'tester', [ self::class, 'renderTagSample' ] );
       $parser->setFunctionHook( 'API-itemInfobox', [ self::class, 'renderItem' ] );
       $parser->setFunctionHook( 'API-totalOnlinePlayers', [ self::class, 'getOnlinePlayers' ] );
       $parser->setFunctionHook( 'API-ingredientInfobox', [ self::class, 'renderIngredientInfobox' ] );
@@ -184,4 +185,49 @@ class ExtensionHooks {
   
       return [ $string, 'noparse' => false ];;
    }
+
+   public static function renderTagSample( $input, array $args, Parser $parser, PPFrame $frame ) {
+      //Encode name (using _ for spaces)
+      $searchName = str_replace(" ", "_", $input);
+
+      //Build get request
+      $ch = curl_init("https://api.wynncraft.com/v2/ingredient/get/$searchName");
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_HEADER, 0);
+   
+      //Execute request
+      $data = curl_exec($ch);
+      curl_close($ch);
+
+      //Decode request
+      $itemsList=json_decode($data, true)['data'];
+
+      //Check list
+      if (sizeof($itemsList) <= 0) {
+         return "Item $itemName Not Found";
+      }
+      $itemData = $itemsList[0];
+
+      //Configure overrides
+     // if ($overrides != "") {
+     //    $overridesTemp = explode(",", $overrides);
+     //    foreach ($overridesTemp as $value) {
+     //       $array = explode('=', $value);
+     //       $itemData[$array[0]] = $array[1]; 
+     //    }
+    //  }
+
+      //Build infobox
+      $string  = "{{Infobox/Ingredient <br>";
+      $string .= "| name = ". $itemData['name'] . "<br>";
+      $string .= "| image = {{WynnIcon|". $itemData['sprite']['id'].":".$itemData['sprite']['damage'] . "}}<br>";
+      $string .= "| tier = ". $itemData['tier'] . "<br>";
+      $string .= "| level = ". $itemData['level'] . "<br>";
+      $string .= "| professions = ". implode(',', $itemData['skills']) . "<br>";
+      $string .= "}}";
+
+      return $string;
+   }
+   
+
 }
