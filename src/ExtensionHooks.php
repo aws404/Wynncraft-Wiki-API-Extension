@@ -2,7 +2,6 @@
 class ExtensionHooks {
    // Register any render callbacks with the parser
    public static function onParserFirstCallInit( Parser $parser ) {
-
       $parser->setFunctionHook( 'API-itemInfobox', [ self::class, 'renderItem' ] );
       $parser->setFunctionHook( 'API-totalOnlinePlayers', [ self::class, 'getOnlinePlayers' ] );
       $parser->setFunctionHook( 'API-ingredientInfobox', [ self::class, 'renderIngredientInfobox' ] );

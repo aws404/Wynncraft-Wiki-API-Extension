@@ -2,12 +2,12 @@
 	"name": "WynnAPIExtension",
 	"author": "Alex Shearing",
 	"version": "1.0.0",
-	"url": "https://www.mediawiki.org/wiki/Extension:ExampleExtension",
+	"url": "https://www.mediawiki.org/wiki/Extension:APIExtension",
 	"descriptionmsg": "An extension that provides interface with the Wynncraft API for Weapons, Armour and Ingredients",
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"MessagesDirs": {
-		"ExampleExtension": [
+		"WynnAPIExtension": [
 			"i18n"
 		]
 	},
