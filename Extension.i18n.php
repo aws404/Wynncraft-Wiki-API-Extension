@@ -1,17 +1,18 @@
 <?php
 /**
  * @license GPL-2.0-or-later
- * @author Alex Shearing
+ * @author aws404
  */
 
 $magicWords = [];
 
 /** English
- * @author Alex Shearing
+ * @author aws404
  */
 $magicWords['en'] = [
-   'API-itemInfobox' => [ 0, 'API-itemInfobox' ],
-   'API-totalOnlinePlayers' => [ 0, 'API-totalOnlinePlayers' ],
-   'API-ingredientInfobox' => [ 0, 'API-ingredientInfobox' ],
-   'API-ingredientIdentifications' => [ 0, 'API-ingredientIdentifications' ]
+   'API-ItemInfobox' => [0, 'API-ItemInfobox'],
+   'API-ItemIdentifications' => [0, 'API-ItemIdentifications'],
+   'API-TotalOnlinePlayers' => [0, 'API-TotalOnlinePlayers'],
+   'API-IngredientInfobox' => [0, 'API-IngredientInfobox'],
+   'API-IngredientIdentifications' => [0, 'API-IngredientIdentifications']
 ];

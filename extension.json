@@ -1,9 +1,9 @@
 {
 	"name": "WynnAPIExtension",
-	"author": "Alex Shearing",
+	"author": "aws404",
 	"version": "1.0.0",
-	"url": "https://www.mediawiki.org/wiki/Extension:APIExtension",
-	"descriptionmsg": "An extension that provides interface with the Wynncraft API for Weapons, Armour and Ingredients",
+	"url": "https://github.com/aws404/Wynncraft-Wiki-API-Extension",
+	"descriptionmsg": "An extension that provides interface with the Wynncraft API for Weapons, Armour, Accessories, Ingredients and more",
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"MessagesDirs": {
