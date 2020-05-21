@@ -9,7 +9,7 @@ class TotalOnlinePlayers {
 
     //public static function render() {
     public static function render(Parser $parser) {
-        return WynnAPIWrapper::get_onlinePlayersSum();;
+        return WynnAPIWrapper::get_onlinePlayersSum();
     }
 
 }

@@ -26,7 +26,8 @@ class IngredientInfobox {
         $templateData['level'] = $itemData['level'];
         $templateData['professions'] = implode(',', $itemData['skills']);
 
-        return CommonFunctions::create_template("Infobox/Ingredient", $templateData);
+        $return = CommonFunctions::create_template("Infobox/Ingredient", $templateData);
+		return [$return, 'noparse' => false];
     }
 
 }

@@ -29,7 +29,9 @@ class IngredientIdentifications {
             }
         }
         
-        //[$return, 'noparse' => false]
-        return CommonFunctions::create_template("Identification", $templateData);
-    }
+        
+        $return = CommonFunctions::create_template("Identification", $templateData);
+		
+		return [$return, 'noparse' => false];
+	}
 }
